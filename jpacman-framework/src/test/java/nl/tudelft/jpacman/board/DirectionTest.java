@@ -20,4 +20,25 @@ public class DirectionTest {
         Direction north = Direction.valueOf("NORTH");
         assertThat(north.getDeltaY()).isEqualTo(-1);
     }
+
+    @Test
+    void testSouth() {
+        Direction south = Direction.valueOf("SOUTH");
+        assertThat(south.getDeltaY()).isEqualTo(1);
+    }
+
+    @Test
+    void testEast() {
+        Direction south = Direction.valueOf("EAST");
+        assertThat(south.getDeltaX()).isEqualTo(1);
+    }
+
+    @Test
+    void testWest() {
+        Direction south = Direction.valueOf("WEST");
+        assertThat(south.getDeltaX()).isEqualTo(-1);
+    }
+
+
+
 }
