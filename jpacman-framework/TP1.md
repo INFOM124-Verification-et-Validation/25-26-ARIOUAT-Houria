@@ -12,7 +12,7 @@ Open the `board.OccupantTest` class and implement the 3 empty tests:
 ## Exercice 3
 Open the `board.BoardTest` class and implement the following tests :
 1. `verifyWidth()` verifies that the board's width is **equal to** its max width.
-2. `verifyHeight()` verifies that the board's height is **equal to** its max height.
+2. `verifyHeight()` **verifie**s that the board's height is **equal to** its max height.
 3. `testSquareAt` test asserts that X Y coordinates are indeed on the board.
 
 **Note : Board is already declared in the test class (see variable `board`), use it to verify your assertions
