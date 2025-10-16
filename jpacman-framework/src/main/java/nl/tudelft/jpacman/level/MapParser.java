@@ -57,7 +57,7 @@ public class MapParser {
      * </ul>
      *
      * @param map
-     *            The text representation of the board, with map[x][y]
+     *            reThe text presentation of the board, with map[x][y]
      *            representing the square at position x,y.
      * @return The level as represented by this text.
      */
