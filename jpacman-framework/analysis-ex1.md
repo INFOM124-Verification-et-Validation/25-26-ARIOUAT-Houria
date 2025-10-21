@@ -1,19 +1,18 @@
 # Specification-based Testing
 
 ## 1. Goal, inputs and outputs
-- Goal:
-- Input domain:
-- Output domain:
+
 
 ## 2. Explore the program (if needed)
 
 ## 3. Identify input and output partitions
 
+
 ### Input partitions
 
 #### Individual inputs
 Distance partitions:
-- D1: Clyde is within 8 grid spaces of Pac-man (distance < 8)
+- D1: Clyde is within 8 grid spaces of Pac-man (distance < 8) 
 - D2: Clyde is beyond 8 grid spaces of Pac-man (distance > 8)
 - D3: Clyde is at exactly 8 grid spaces of Pac-man (distance = 8)
 

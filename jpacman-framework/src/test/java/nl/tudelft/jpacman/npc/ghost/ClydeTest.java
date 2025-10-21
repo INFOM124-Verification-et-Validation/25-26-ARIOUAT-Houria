@@ -47,20 +47,84 @@ public class ClydeTest {
 
     }
 
+    @Test
+    public void distanceLowerThan8AndPathIsNotBlockedTest() {
+        PacManSprites sproute = new PacManSprites();
+
+        List<String> map = Arrays.asList(
+            "##########",
+            "#C      P#",
+            "##########"
+        );
+        Level level = ghostMapParser.parseMap(map);
+        Player pacman = playerFactory.createPacMan();
+        level.registerPlayer(pacman);
+
+        Clyde clyde = Navigation.findUnitInBoard(Clyde.class, level.getBoard());
+        assert clyde != null;
+        Optional<Direction> clydeDirection = clyde.nextAiMove();
+        assertEquals(Optional.of(Direction.WEST), clydeDirection);
+
+
+    }
+
+
+    @Test
+    public void distanceAt8AndPathIsNotBlockedButClydeHasOnlyOneWayToGoTest() {
+        PacManSprites sproute = new PacManSprites();
+
+        List<String> map = Arrays.asList(
+            "##########",
+            "C        P",
+            "##########"
+        );
+        Level level = ghostMapParser.parseMap(map);
+        Player pacman = playerFactory.createPacMan();
+        level.registerPlayer(pacman);
+
+        Clyde clyde = Navigation.findUnitInBoard(Clyde.class, level.getBoard());
+        assert clyde != null;
+        Optional<Direction> clydeDirection = clyde.nextAiMove();
+        assertEquals(Optional.of(Direction.EAST), clydeDirection);
+
+
+
+
+    }
+
+    @Test
+    public void distanceGreaterThan8AndPathIsNotBlockedTest() {
+        PacManSprites sproute = new PacManSprites();
+
+        List<String> map = Arrays.asList(
+            " C########",
+            "#        P",
+            "##########"
+        );
+        Level level = ghostMapParser.parseMap(map);
+        Player pacman = playerFactory.createPacMan();
+        level.registerPlayer(pacman);
+
+        Clyde clyde = Navigation.findUnitInBoard(Clyde.class, level.getBoard());
+        assert clyde != null;
+        Optional<Direction> clydeDirection = clyde.nextAiMove();
+        assertEquals(Optional.of(Direction.SOUTH), clydeDirection);
+
+
+
+
+
+
+    }
+
+
+
+
 
 
 
 
 }
-
-
-
-
-
-
-
-
-
 
 
 
