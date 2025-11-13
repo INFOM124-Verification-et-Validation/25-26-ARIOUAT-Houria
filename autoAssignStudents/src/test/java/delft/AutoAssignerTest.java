@@ -67,6 +67,7 @@ class AutoAssignerTest {
         assertTrue(days.getHour() == 9);
         assertTrue(days.getMinute() == 59);
         assertTrue(days.getYear() == 2022);
+
    }
 
     @Test

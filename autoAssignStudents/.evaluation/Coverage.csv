@@ -4,3 +4,4 @@ totalClassCount,coveredClassCount,totalMethodCount,coveredMethodCount,totalLineC
 1,1,1,1,9,8,6,5,delft.AutoAssigner,AutoAssignerTest.assignstudent
 1,1,1,1,9,8,6,5,delft.AutoAssigner,AutoAssignerTest.assignstudent
 1,1,1,1,9,8,6,5,delft.AutoAssigner,AutoAssignerTest.assignstudent
+1,1,1,1,9,9,6,6,delft.AutoAssigner,AutoAssignerTest
