@@ -17,7 +17,7 @@ public class Player extends Unit {
     /**
      * The amount of points accumulated by this player.
      */
-    private final PlayerScoreManager scoreManager;
+    private final PlayerScoreManager scoreManager; //pas ouf ne fait que rediriger les choses vers plusieurs class (message chains)
 
     /**
      * The animations for every direction.
